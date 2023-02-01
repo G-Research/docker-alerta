@@ -47,7 +47,6 @@ jobs:
           context: .
           build-args: |
             WEBUI_SHA=${{ steps.vars.outputs.WEBUI_SHA }}
-            VERSION=${{ steps.vars.outputs.VERSION }}
           tags: ${{ steps.meta.outputs.tags }}
           push: ${{ github.ref_protected }} # only for protected branches
           labels: ${{ steps.meta.outputs.labels }}
